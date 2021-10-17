@@ -10,19 +10,11 @@
 .headerItem {
   display: flex;
   align-items: center;
-  justify-content: start;
-  margin-left: 10%;
   margin-top: 10%;
-  margin-bottom: 15%;
+  margin-bottom: 20%;
 }
 
 .headerTitle {
   font-size: 60px;
   font-family: "Bebas Neue", cursive;
-}
-
-.content-area {
-  position: relative;
-  top: 500px;
-  background: #fff;
 }
