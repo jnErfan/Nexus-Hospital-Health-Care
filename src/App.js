@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch,  Route} from 'react-router-dom';
 import NavBar from './Nexus_Hospital/Pages/Shared/NavBar/NavBar';
 import Home from './Nexus_Hospital/Pages/Home/Home/Home';
 import Services from './Nexus_Hospital/Pages/Home/Services/Services';
+import NotFound from './Nexus_Hospital/Pages/NotFound/NotFound';
 
 function App() {
   return (
@@ -22,6 +23,10 @@ function App() {
 
        <Route path="/services">
           <Services/>
+       </Route>
+
+       <Route exact path="*">
+          <NotFound/>
        </Route>
 
      </Switch>
