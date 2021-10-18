@@ -54,8 +54,8 @@ const NavBar = () => {
       user ? <Button onClick={logOut} variant=" py-0 mb-2">
         <img width="20px" src="https://cdn-icons-png.flaticon.com/512/158/158730.png" alt="" />
       </Button> : */}
-      <HashLink to="/login#login" ><Button variant="outline-dark px-3 py-0 mb-2 rounded-pill fw-bold">LOGIN</Button></HashLink>
-      <HashLink to="/signin#signin" ><Button variant="dark px-3 py-0 mb-2 rounded-pill ms-3 fw-bold">SIGN UP</Button></HashLink>
+      <HashLink to="/login" ><Button variant="outline-dark px-3 py-0 mb-2 rounded-pill fw-bold">LOGIN</Button></HashLink>
+      <HashLink to="/signin" ><Button variant="dark px-3 py-0 mb-2 rounded-pill ms-3 fw-bold">SIGN IN</Button></HashLink>
       
     {/* } */}
     </div>

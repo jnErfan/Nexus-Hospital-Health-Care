@@ -10,6 +10,8 @@ import Blogs from './Nexus_Hospital/Pages/Blogs/Blogs';
 import About from './Nexus_Hospital/Pages/About/About';
 import Contract from './Nexus_Hospital/Pages/Contract/Contract';
 import ServiceDetails from './Nexus_Hospital/Pages/Home/ServiceDetails/ServiceDetails';
+import SignIn from './Nexus_Hospital/SignIn/SignIn';
+import Login from './Nexus_Hospital/Login/Login';
 
 function App() {
   return (
@@ -44,6 +46,14 @@ function App() {
 
        <Route path="/contract">
           <Contract/>
+       </Route>
+
+       <Route path="/signin">
+          <SignIn/>
+       </Route>
+
+       <Route path="/login">
+          <Login/>
        </Route>
 
        <Route exact path="*">

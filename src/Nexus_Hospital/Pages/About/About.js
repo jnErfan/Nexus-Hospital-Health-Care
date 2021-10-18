@@ -6,13 +6,14 @@ const About = () => {
         <div className="container" id="aboutus">
             <div>
             <div className="">
-                <h1 className="Specialties mb-5">Our Specialties</h1>
+                <h1 data-aos="flip-right" data-aos-duration="1000" className="Specialties mb-5">About Us</h1>
                 <h1 className="">Trusted Nexus Service</h1>
                 <p className="text-secondary">
                 Reason why you should choose us
                 We have introduced the principle of family medicine, which means that the family practitioner will handle the majority of medical requests, with a specialists involved only if necessary.
                 </p>
              </div>
+             <h1 className="Specialties mb-5 mt-5">Our Specialties</h1>
              <div className="row row-cols-3 mt-5 container">
                  <div className="col col-12 col-md-6 col-lg-4">
 
