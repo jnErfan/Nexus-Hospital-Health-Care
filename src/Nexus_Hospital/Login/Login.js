@@ -32,6 +32,7 @@ const Login = () => {
 
 
         </Row>
+        <div className="bg-info mt-5"><hr /></div>
         </div>
         </div>
     );
