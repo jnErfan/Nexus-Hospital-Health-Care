@@ -5,6 +5,7 @@ import NavBar from './Nexus_Hospital/Pages/Shared/NavBar/NavBar';
 import Services from './Nexus_Hospital/Pages/Home/Services/Services';
 import NotFound from './Nexus_Hospital/Pages/NotFound/NotFound';
 import HomeContainer from './Nexus_Hospital/Pages/Home/HomeContainer/HomeContainer';
+import Footer from './Nexus_Hospital/Pages/Shared/Footer/Footer';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
        </Route>
 
      </Switch>
+     <Footer/>
    </Router>
     </div>
   );

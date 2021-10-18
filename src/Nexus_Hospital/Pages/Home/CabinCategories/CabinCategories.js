@@ -48,7 +48,9 @@ const CabinCategories = () => {
                 </div>
         </div>
     </div>
+    <div className="bg-dark mt-5 mb-5"><hr /></div>
      </div>
+     
         </div>
     );
 };
