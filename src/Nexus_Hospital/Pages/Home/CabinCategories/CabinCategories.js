@@ -1,9 +1,10 @@
 import React from 'react';
+import "./CabinCategories.css";
 
 const CabinCategories = () => {
     return (
         <div>
-            <h1 className="fw-bold">CABINS CATEGORIES </h1>
+            <h1 className="fw-bold cabin">CABINS CATEGORIES </h1>
      <div className="container">
      <div className="row row-cols-2 pt-3 rounded-3">
 

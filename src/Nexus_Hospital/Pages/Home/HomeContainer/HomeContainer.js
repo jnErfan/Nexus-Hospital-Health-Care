@@ -1,13 +1,15 @@
 import React from 'react';
 import CabinCategories from '../CabinCategories/CabinCategories';
 import Header from '../Header/Header';
-import "./Home.css";
+import Services from '../Services/Services';
+import "./HomeContainer.css";
 
-const Home = () => {
+const HomeContainer = () => {
     return (
         <div>
           <Header/> 
           <div className="content-area pt-4">
+            <Services/>
           <CabinCategories/>     
           </div>
 
@@ -15,4 +17,4 @@ const Home = () => {
     );
 };
 
-export default Home;<Header/>
+export default HomeContainer;

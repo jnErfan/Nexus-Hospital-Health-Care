@@ -1,5 +1,104 @@
 [
     {
-        
+        "id": "1001",
+        "displayImg": "http://www.banglanewslive.com/wp-content/uploads/2016/05/Cardiovascular-Thoracic-Surgeon-bd.jpg",
+        "serviceName": "Cardiovascular & Thoracic",
+        "serviceDetail": "Cardiologist will diagnose of the heart and treat them with medication.",
+        "discription": "cardiothoracic surgeon is a medical doctor who specializes in surgical procedures of the heart, lungs, esophagus, and other organs in the chest. This includes surgeons who can be called cardiac surgeons, cardiovascular surgeons, general thoracic surgeons, and congenital heart surgeons.",
+        "specialist": "Prof. Dr. Md. Saiful Haque Talukdar",
+        "degree": "MBBS, MS (CVTS)",
+        "gender": "Male"
+    },
+    {
+        "id": "1002",
+        "displayImg": "https://s.abcnews.com/images/Health/GTY-Pregnant-Woman-Doctor-MEM-170501_16x9_992.jpg",
+        "serviceName": "Gynecologist & Obstetrician",
+        "serviceDetail": "Diagnose and treat reproductive system disorders such as endometriosis",
+        "discription": "Gynecologist is a doctor who specializes in female reproductive health. They diagnose and treat issues related to the female reproductive tract. This includes the uterus, fallopian tubes, and ovaries and breasts. Anyone with female organs may see a gynecologist.  80% of those who see one are between 15 to 45 years old. ",
+        "specialist": "Dr. Mushahida Annur Renu",
+        "degree": "MBBS, BCS (Health), FCPS (OBGYN)",
+        "gender": "Female"
+    },
+    {
+        "id": "1003",
+        "displayImg": "https://thumbs.dreamstime.com/b/sore-throat-woman-pain-neck-isolated-white-background-sore-throat-woman-pain-neck-isolated-white-background-128761645.jpg",
+        "serviceName": "Diabetes, Thyroid & Hormone",
+        "serviceDetail": "thyroid hormones have been described in patients  diabetes especially  poor glycemic",
+        "discription": "Thyroid diseases and diabetes mellitus are the two most common endocrine disorders encountered in clinical practice. Diabetes and thyroid disorders have been shown to mutually influence each other and associations between both conditions have long been reported [1, 2]. On one hand, thyroid hormones contribute to the regulation of carbohydrate metabolism and pancreatic function, and on the other hand, diabetes affects thyroid function tests to variable extents. ",
+        "specialist": "Dr. Palash Kumar Chanda",
+        "degree": "MBBS, BCS (Health), DEM (BSMMU)",
+        "gender": "Male"
+    },
+    {
+        "id": "1004",
+        "displayImg": "https://cdn.images.express.co.uk/img/dynamic/11/750x445/776113.jpg",
+        "serviceName": "Kidney Disease & Hypertension",
+        "serviceDetail": "kidney disease. It can usually be controlled by blood pressure drugs. ",
+
+        "discription": "Healthy kidneys filter about a half cup of blood every minute, removing wastes and extra water to make urine. The urine flows from each kidney to the bladder through a pair of thin tubes called ureters, one on each side of your bladder.Renal hypertension, also called renovascular hypertension, is elevated blood pressure caused by kidney disease. It can usually be controlled by blood pressure drugs. Some people with renal hypertension can be helped by angioplasty, stenting, or surgery on the blood vessels of the kidney.",
+
+        "specialist": "Dr. Abu Zafor Md. Salahuddin",
+        "degree": "MBBS (Dhaka), BCS (Health),BSMMU",
+        "gender": "Male"
+    },
+    {
+        "id": "1005",
+        "displayImg": "https://www.hospitto.com/blog/wp-content/uploads/2019/01/Plast-surgery-735x400.jpg",
+        "serviceName": "Burn & Plastic Surgery",
+        "serviceDetail": "Skin grafts  is removed from one area of the body",
+
+        "discription": "Skin grafts. This is often used for burn patients; skin is removed from one area of the body and transplanted to another. During a skin graft, a special skin-cutting instrument known as a Dermatome removes the skin from an area (the donor site) usually hidden by clothing such as the buttocks or inner thigh. Once removed, the graft is placed on the area in need of covering and held in place by a dressing and a few stitches. The donor site is also covered with a dressing to prevent infection from occurring.",
+
+        "specialist": "Dr. Adnan Kaiser",
+        "degree": "MBBS (DMC), MS (Plastic Surgery)",
+        "gender": "Male"
+    },
+    {
+        "id": "1006",
+        "displayImg": "https://images.medicinenet.com/images/article/main_image/itching-2.jpg",
+        "serviceName": "Skin Allergy Dermatitis",
+        "serviceDetail": "Itchy skin can be the result of a rash or another skin condition.",
+
+        "discription": "Skin serves a vital purpose as the barrier that protects the inside of the body. It is filled with special cells of the immune system that can protect the body and skin from viruses, bacteria, and other hidden threats. Once the skin cells detect any type of suspicious substance, they trigger a reaction that causes the area to become inflamed. Medical professionals refer to this inflammation as a rash or dermatitis. This can lead to itching. Immune cells can react to something that touches the skin, a whole-body infection, or an illness. Some rashes are red, painful, and irritated, while others can lead to blisters or patches of raw skin.",
+
+        "specialist": "Dr. Swapan Kumar Sen",
+        "degree": "MBBS, DDV, MPH,(Dermoscopy)",
+        "gender": "Male"
+    },
+    {
+        "id": "1007",
+        "displayImg": "https://muhc.ca/sites/default/files/interbeam-sm.jpg",
+        "serviceName": "Breast and colorectal surgery",
+        "serviceDetail": "Aspects of breast,  colorectal surgery",
+
+        "discription": "surgeons are experienced in the treatment of complex cancers, benign anorectal disease, rectal prolapse, complex diverticular disease and more. Our team uses the latest techniques, including transanal, minimally invasive and robotic surgery. We offer sacral nerve stimulation for fecal incontinence and are the only team in St. Louis to offer high-resolution anoscopy. As part of an academic medical practice, we coordinate patient care with other SLUCare specialists to comprehensively address your medical needs and optimize treatment for the best possible outcome. In some cases, surgery is not necessarily the answer, and we may pursue a more conservative approach. Some conditions may even be treated with a same-day, in-office procedure.",
+
+        "specialist": "Dr. Afroza Islam",
+        "degree": "MBBS, BCS, FCPS (Surgery)",
+        "gender": "Female"
+    },
+    {
+        "id": "1008",
+        "displayImg": "https://sarafhospital.in/wp-content/uploads/2020/06/urology.jpg",
+        "serviceName": "Urology Surgery",
+        "serviceDetail": "Diseases of the male and female Urinary tract",
+
+        "discription": "Urology is a part of health care that deals with diseases of the male and female urinary tract (kidneys, ureters, bladder and urethra). It also deals with the male organs that are able to make babies (penis, testes, scrotum, prostate, etc.). Since health problems in these body parts can happen to everyone, urologic health is important.Urology is known as a surgical specialty. Besides surgery, a urologist is a doctor with wisdom of internal medicine, pediatrics, gynecology and other parts of health care. This is because a urologist encounters a wide range of clinical problems. The scope of urology is big and the American Urological Association has named seven subspecialty parts:",
+
+        "specialist": "Dr. Md. Fazlul Haq Siddique",
+        "degree": "MBBS, MS (Urology)",
+        "gender": "Male"
+    },
+    {
+        "id": "1009",
+        "displayImg": "https://cdn.sanity.io/images/0vv8moc6/ophtimeeurope/b8a2b5d7745c6e129fb693ca4282cf9ebb180fae-5760x3840.jpg/AdobeStock_213899115.jpeg?w=1000&fit=max&auto=format",
+        "serviceName": "Eye Disorders And Disease",
+        "serviceDetail": "Eye disease can become vicious cycle",
+
+        "discription": " eye is a very complex disease. It is not just a question of lack of water and so it is impossible to treat patients just by lubricating the eye with water. It is a disease that involves a series of self-stimulating biological events, and the lack of tears, insufficient tear quality or their instability results in direct mechanical and/or osmotic stress, which causes further damage.In addition, goblet cell loss results in further tear film instability or imbalance and thus, dryness. The drier the eyes become, the more inflammatory they become and the greater the inflammation, the more the eyes continue to dry out, i.e., a vicious cycle occurs",
+
+        "specialist": "Dr. A.Y.M Ferdous Hasan",
+        "degree": "MBBS, BCS (Health), MS (EYE-BSMMU), MCPS",
+        "gender": "Male"
     }
 ]

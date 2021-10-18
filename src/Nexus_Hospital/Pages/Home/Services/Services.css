@@ -1,0 +1,28 @@
+.ourServices {
+  border-bottom: 5px solid #4ea9ff;
+  border-radius: 10px;
+  display: inline-block;
+  font-family: "Bebas Neue", cursive;
+}
+.serviceCard {
+  transition: 700ms;
+  box-shadow: 1px 1px 15px #c4e3ff;
+  border: 0px;
+  border-bottom: 5px solid #4ea9ff;
+  border-radius: 5px;
+}
+.serviceCard:hover {
+  box-shadow: 1px 1px 10px #4ea9ff;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.detailsButton:hover {
+  background-color: #4ea9ff;
+  color: #fff;
+}
+.detailsButton {
+  outline: solid 1px #4ea9ff;
+  background-color: #fff;
+  color: #4ea9ff;
+  border: 0px;
+}

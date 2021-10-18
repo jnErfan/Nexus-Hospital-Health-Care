@@ -2,9 +2,9 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Switch,  Route} from 'react-router-dom';
 import NavBar from './Nexus_Hospital/Pages/Shared/NavBar/NavBar';
-import Home from './Nexus_Hospital/Pages/Home/Home/Home';
 import Services from './Nexus_Hospital/Pages/Home/Services/Services';
 import NotFound from './Nexus_Hospital/Pages/NotFound/NotFound';
+import HomeContainer from './Nexus_Hospital/Pages/Home/HomeContainer/HomeContainer';
 
 function App() {
   return (
@@ -14,11 +14,11 @@ function App() {
      <Switch>
 
        <Route exact path="/">
-          <Home/>
+          <HomeContainer/>
        </Route>
 
        <Route path="/home">
-          <Home/>
+          <HomeContainer/>
        </Route>
 
        <Route path="/services">
