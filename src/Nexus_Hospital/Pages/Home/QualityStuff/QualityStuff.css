@@ -10,3 +10,5 @@
   transform: scale(1.05);
   transition: 700ms;
 }
+@media only screen and (max-width: 688px) {
+}

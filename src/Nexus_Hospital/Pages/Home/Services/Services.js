@@ -1,6 +1,10 @@
+import Aos from 'aos';
 import React, { useEffect, useState } from 'react';
 import { Button, Card, Col, Row } from 'react-bootstrap';
 import "./Services.css";
+
+// Aos Initialize
+Aos.init();
 
 const Services = () => {
 
@@ -14,14 +18,14 @@ useEffect(() => {
 console.log();
     return (
         <div className="container serviceContainer">
-            <div className="">
+            <div  data-aos="flip-right" className="">
                 <h1 className="ourServices mb-5">Our Services</h1>
             </div>
             <Row xs={1} md={2} lg={3} className="g-4">
 
                 {
                     services.map(service => 
-            <Col className="my-3 mt-5" key={service.id}>
+            <Col data-aos="flip-right" data-aos-duration="1000" className="my-3 mt-5" key={service.id}>
                          <Card className="serviceCard">
                         <Card.Img variant="top" height="225px" src={service.displayImg} />
                         <Card.Body>

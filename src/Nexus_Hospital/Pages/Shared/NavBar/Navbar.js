@@ -27,8 +27,8 @@ const NavBar = () => {
    </div>
    
     <div>
-    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    <Navbar.Collapse id="basic-navbar-nav">
+    <Navbar.Toggle aria-controls="basic-navbar-nav" className="mb-3"  />
+    <Navbar.Collapse className="" id="basic-navbar-nav">
       <NavLink activeStyle={activeStyle}  className="navItem" to="/home">
       <i className="fas fa-home me-2"></i>  Home</NavLink>
       <NavLink activeStyle={activeStyle}  className="navItem" to="/services">
@@ -39,7 +39,7 @@ const NavBar = () => {
        <i className="far fa-address-card me-2"></i> About Us</NavLink>
       <NavLink activeStyle={activeStyle}  className="navItem" to="/contract">
       <i className="far fa-envelope me-2"></i> Contract Us</NavLink>
-    </Navbar.Collapse>
+      </Navbar.Collapse>
     </div>
 
     <div>
@@ -54,10 +54,9 @@ const NavBar = () => {
       user ? <Button onClick={logOut} variant=" py-0 mb-2">
         <img width="20px" src="https://cdn-icons-png.flaticon.com/512/158/158730.png" alt="" />
       </Button> : */}
-    
       <HashLink to="/login#login" ><Button variant="outline-dark px-3 py-0 mb-2 rounded-pill fw-bold">LOGIN</Button></HashLink>
       <HashLink to="/signin#signin" ><Button variant="dark px-3 py-0 mb-2 rounded-pill ms-3 fw-bold">SIGN UP</Button></HashLink>
-     
+      
     {/* } */}
     </div>
   </Container>

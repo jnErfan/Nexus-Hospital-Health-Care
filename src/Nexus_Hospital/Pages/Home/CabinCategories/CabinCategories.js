@@ -1,10 +1,13 @@
+import Aos from 'aos';
 import React from 'react';
 import "./CabinCategories.css";
+// Aos Initialize
+Aos.init();
 
 const CabinCategories = () => {
     return (
         <div>
-            <h1 className="fw-bold cabin">CABINS CATEGORIES </h1>
+            <h1 data-aos="zoom-out-left" className="fw-bold cabin">CABINS CATEGORIES </h1>
      <div className="container">
      <div className="row row-cols-2 pt-3 rounded-3">
 
@@ -35,11 +38,11 @@ const CabinCategories = () => {
 
         <div className="col col-12 col-md-12 col-lg-6 d-flex align-items-center mt-3">
                 <div className="shadow-sm p-3 rounded-3">
-                <h1 className="text-primary">BED & ROOM CATEGORIES</h1>
+                <h1 data-aos="zoom-out-right" className="text-primary">BED & ROOM CATEGORIES</h1>
                     <p className="text-secondary"><small>
                     You may choose from different categories of in-patient beds/rooms of the hospital, including General Ward, AC Ward, Single Bed  (AC/ Non AC), Double Bed (AC/Non AC), Deluxe Cabin and   VIP Cabin. Beds/Cabins are allotted depending on your choice and availability.    
                     </small></p>
-                    <h1  className="text-primary"> NURSING CARE</h1>
+                    <h1 data-aos="zoom-out-right" className="text-primary"> NURSING CARE</h1>
                     <p className="text-secondary">
                     <small>
                     DCIMCH provides 24-hours comprehensive, individualized nursing care for in-patients based on their assessed nursing needs. To provide best quality nursing care, the nursing personnel’s are selected on merit basis and thereafter prepared adequately by education and Hands-on Training. 

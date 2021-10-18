@@ -32,3 +32,20 @@
 .scrollOutBg {
   transition: 700ms;
 }
+.bgTransparent {
+  background-color: aqua;
+}
+@media only screen and (max-width: 750px) {
+  .navItem {
+    padding: 5px 0px;
+    padding-left: 5px;
+  }
+  .navItem:after {
+    content: "";
+    display: block;
+  }
+
+  .navItem:hover::after {
+    width: 0%;
+  }
+}

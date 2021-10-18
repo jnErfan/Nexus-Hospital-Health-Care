@@ -1,5 +1,7 @@
+import Aos from 'aos';
 import React from 'react';
 import "./PartneringValue.css";
+Aos.init();
 
 const PartneringValue = () => {
     return (
@@ -10,7 +12,7 @@ const PartneringValue = () => {
             </iframe>
             </div>
             <div className="col col-12 col-md-6 col-lg-6 text-start mb-5">
-                <h3 className="PARTNERING mb-4">PARTNERING ON VALUE</h3>
+                <h3 data-aos="zoom-in" className="PARTNERING mb-4">PARTNERING ON VALUE</h3>
                 <h3 className="">
                 How we lower costs for our health plan partners and patients.
                 </h3>
