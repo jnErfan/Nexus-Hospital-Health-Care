@@ -1,6 +1,7 @@
 import React from 'react';
 import CabinCategories from '../CabinCategories/CabinCategories';
 import Header from '../Header/Header';
+import PartneringValue from '../PartneringValue/PartneringValue';
 import QualityStuff from '../QualityStuff/QualityStuff';
 import Services from '../Services/Services';
 import "./HomeContainer.css";
@@ -13,6 +14,7 @@ const HomeContainer = () => {
             <Services/>
           <CabinCategories/>   
           <QualityStuff/>  
+          <PartneringValue/>
           </div>
 
         </div>

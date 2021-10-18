@@ -13,7 +13,7 @@ useEffect(() => {
 },[])
 console.log();
     return (
-        <div className="container my-5">
+        <div className="container serviceContainer">
             <div className="">
                 <h1 className="ourServices mb-5">Our Services</h1>
             </div>

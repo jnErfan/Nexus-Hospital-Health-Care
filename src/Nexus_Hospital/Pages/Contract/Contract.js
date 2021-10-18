@@ -3,8 +3,8 @@ import "./Contract.css";
 
 const Contract = () => {
     return (
-        <div>
-            
+        <div className="mt-5">
+            <h1>Contract</h1>
         </div>
     );
 };

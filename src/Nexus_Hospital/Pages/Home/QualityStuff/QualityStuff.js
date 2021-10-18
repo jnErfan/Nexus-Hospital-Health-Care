@@ -4,7 +4,7 @@ import { Card, Col, Row } from "react-bootstrap";
 
 const QualityStuff = () => {
     return (
-<div className="container">
+<div className="container pb-5">
              <div className="">
                 <h1 className="QualityStuff mb-5">QUALITY STUFF</h1>
              </div>
@@ -57,6 +57,7 @@ const QualityStuff = () => {
              </Col>
 </Row>
            </div>
+           <div className="bg-dark"><hr className="mt-5" /></div>
         </div>
     );
 };

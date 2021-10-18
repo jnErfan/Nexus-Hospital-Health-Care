@@ -4,10 +4,10 @@ import "./Footer.css";
 
 const Footer = () => {
     return (
-        <div className="footer-content-area mt-5">
+        <div className="footer-content-area">
             <div className="container">
             <div className="text-start pt-3">
-            <img width="150px" src="https://i.ibb.co/G5SHpzG/logo.png" alt="" />
+            <img width="15%" className="bg-white p-3" src="https://i.ibb.co/G5SHpzG/logo.png" alt="" />
             </div>
             <h4 className="footer-Text fw-bold pt-5"> ABOUT US </h4>
            <div className="d-flex row row-cols-3 mt-4 mb-4">
