@@ -29,11 +29,16 @@ const NavBar = () => {
     <div>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
-      <NavLink activeStyle={activeStyle}  className="navItem" to="/home">Home</NavLink>
-      <NavLink activeStyle={activeStyle}  className="navItem" to="/services">Services</NavLink>
-      <NavLink activeStyle={activeStyle}  className="navItem" to="/blogs">Blogs</NavLink>
-      <NavLink activeStyle={activeStyle} className="navItem" to="/about">About Us</NavLink>
-      <NavLink activeStyle={activeStyle}  className="navItem" to="/contract">Contract Us</NavLink>
+      <NavLink activeStyle={activeStyle}  className="navItem" to="/home">
+      <i className="fas fa-home me-2"></i>  Home</NavLink>
+      <NavLink activeStyle={activeStyle}  className="navItem" to="/services">
+      <i className="fas fa-notes-medical me-2"></i> Services</NavLink>
+      <NavLink activeStyle={activeStyle}  className="navItem" to="/blogs">
+      <i className="fab fa-blogger-b me-2"></i> Blogs</NavLink>
+      <NavLink activeStyle={activeStyle} className="navItem" to="/about">
+       <i className="far fa-address-card me-2"></i> About Us</NavLink>
+      <NavLink activeStyle={activeStyle}  className="navItem" to="/contract">
+      <i className="far fa-envelope me-2"></i> Contract Us</NavLink>
     </Navbar.Collapse>
     </div>
 

@@ -1,0 +1,12 @@
+.Specialties {
+  border-bottom: 5px solid #4ea9ff;
+  border-radius: 10px;
+  margin-top: 150px;
+  display: inline-block;
+  font-family: "Bebas Neue", cursive;
+}
+.animateImage {
+  padding: 20px;
+  border: 1px dotted red;
+  border-radius: 200px;
+}

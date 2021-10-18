@@ -11,7 +11,7 @@
 .navItem:hover {
   background-color: #000;
   color: #fff;
-  transform: rotate(15deg);
+  transform: rotate(5deg);
   transition: transform 1s;
 }
 .navItem:after {
