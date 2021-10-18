@@ -2,5 +2,14 @@
   margin-top: 100px;
 }
 .sliderBtn {
-  margin-bottom: -50px;
+  margin-bottom: -20px;
+}
+.ourBlog {
+  border-bottom: 5px solid #4ea9ff;
+  border-radius: 10px;
+  display: inline-block;
+  font-family: "Bebas Neue", cursive;
+}
+.blogHospital {
+  margin-top: 100px;
 }

@@ -1,7 +1,7 @@
 import Aos from 'aos';
 import React, { useEffect, useState } from 'react';
 import { Button, Card, Col, Row } from 'react-bootstrap';
-import { useHistory } from 'react-router';
+import { HashLink } from 'react-router-hash-link';
 import "./Services.css";
 
 // Aos Initialize
@@ -10,7 +10,6 @@ Aos.init();
 const Services = () => {
 
 const [services, setServices] = useState([]);
-const history = useHistory();
 
 useEffect(() => {
     fetch('servicesData.json')
@@ -19,7 +18,7 @@ useEffect(() => {
 },[])
 console.log();
     return (
-        <div className="container serviceContainer">
+        <div className="container serviceContainer" id="servicesid">
             <div  data-aos="flip-right" className="">
                 <h1 className="ourServices mb-5">Our Services</h1>
             </div>
@@ -37,8 +36,7 @@ console.log();
                         </Card.Text>
                             <p className="text-secondary"> Specialist: <br /> <span className="text-dark"> {service.specialist}</span> </p>
                             <p className=""><small className="text-secondary"> {service.degree} </small></p>
-
-                            <Button onClick={()=> history.push(`service/${service.id}`)} className="detailsButton">See Details</Button>
+                             <HashLink to={`service/${service.id}/#serviceDetails`} ><Button className="detailsButton">See Details</Button></HashLink>
 
                         </Card.Body>
                         </Card>

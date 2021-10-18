@@ -3,10 +3,10 @@ import "./Contract.css";
 
 const Contract = () => {
     return (
-        <div className="container contractConatiner">
+        <div className="container contractConatiner" id="contractus">
            <div className="row row-cols-2">
                <div className="col col-12 col-md-6 col-lg-5">
-                   <h1 className="mb-4">
+                   <h1 className="mb-4  mt-4">
                        Contract Info
                    </h1>
                   <div className="text-start">
@@ -49,7 +49,7 @@ const Contract = () => {
               <i className="fas fa-phone-volume fs-1 text-white"></i>
               </div>
               <div>
-              <p >Call Us For Any Question</p>
+              <p>Call Us For Any Question</p>
                 <h3>+84888666888</h3>
               </div>
           </div>

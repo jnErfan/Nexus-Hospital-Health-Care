@@ -16,7 +16,6 @@
 }
 .serviceCard:hover {
   box-shadow: 1px 1px 10px #4ea9ff;
-  cursor: pointer;
   transform: scale(1.05);
 }
 .detailsButton:hover {

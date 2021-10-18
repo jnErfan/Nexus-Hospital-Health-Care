@@ -7,7 +7,7 @@ Aos.init();
 const CabinCategories = () => {
     return (
         <div>
-            <h1 data-aos="zoom-out-left" className="fw-bold cabin">CABINS CATEGORIES </h1>
+            <h1 data-aos="flip-right" className="fw-bold cabin">CABINS CATEGORIES </h1>
      <div className="container">
      <div className="row row-cols-2 pt-3 rounded-3">
 

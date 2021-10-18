@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { useHistory, useParams } from 'react-router';
+import { useParams } from 'react-router';
+import { HashLink } from 'react-router-hash-link';
 import "./ServiceDetails.css";
 
 const ServiceDetails = () => {
     const {serviceId} = useParams();
     const [serviceDetails , setServiceDetails] = useState([]);
-    const history = useHistory();
     useEffect(() => {
         fetch("https://raw.githubusercontent.com/jnErfan/Restaurant-Foods-Data/main/servicesData.json")
         .then(res => res.json())
@@ -15,7 +15,10 @@ const ServiceDetails = () => {
     const serviceDetail = serviceDetails.filter(service => service.id === serviceId);
     const service = serviceDetail?.[0];
     return (
-<div className="container detailsContainer">
+<div className="container detailsContainer" id="serviceDetails">
+            <div  data-aos="flip-right" data-aos-duration="1000" className="">
+                <h1 className="ourService mb-5">Nexus Service</h1>
+            </div>
  <div className="row row-cols-2">
           
       <div data-aos="flip-up" data-aos-duration="2000" className="col col-12 col-md-6 col-lg-6">
@@ -52,8 +55,8 @@ const ServiceDetails = () => {
 
     </div>
  </div>
-
- <button onClick={()=> history.push("/services")} className="btn btn-outline-info px-5 py-3 fw-bold mt-5">Back To Services</button>
+             <HashLink to="/home#servicesid" > <button className="btn btn-info px-4 py-3 ms-5 fw-bold mt-5">Back To Home</button></HashLink>
+             <HashLink to="/contract#contractus" > <button className="btn btn-outline-info px-5 py-3 fw-bold ms-5 mt-5">Contract Us</button></HashLink>
  </div>
     );
 };

@@ -3,7 +3,7 @@ import "./About.css";
 
 const About = () => {
     return (
-        <div className="container">
+        <div className="container" id="aboutus">
             <div>
             <div className="">
                 <h1 className="Specialties mb-5">Our Specialties</h1>
@@ -13,7 +13,7 @@ const About = () => {
                 We have introduced the principle of family medicine, which means that the family practitioner will handle the majority of medical requests, with a specialists involved only if necessary.
                 </p>
              </div>
-             <div className="row row-cols-3 mt-5">
+             <div className="row row-cols-3 mt-5 container">
                  <div className="col col-12 col-md-6 col-lg-4">
 
                  <div className="d-flex pt-5 text-end">
@@ -45,7 +45,7 @@ const About = () => {
 
 
                  <div className="col col-12 col-md-6 col-lg-4 animate__animated animate__pulse animate__slow animate__infinite mt-5">
-                        <img className="animateImage" src="https://macy.7uptheme.net/wp-content/uploads/2019/09/About-1.png" alt="" />
+                 <img className="animateImage w-100" src="https://macy.7uptheme.net/wp-content/uploads/2019/09/About-1.png" alt="" />
                  </div>
 
 

@@ -2,6 +2,7 @@ import React from 'react';
 import "./Header.css";
 import Typewriter from 'typewriter-effect';
 import { Button } from 'react-bootstrap';
+import { HashLink } from 'react-router-hash-link';
 
 const Header = () => {
     return (
@@ -22,7 +23,10 @@ const Header = () => {
               </h1>
                 
             <p className="text-dark fw-bold headerSideItem"><small>Since The First Days Of Operation Nexus, Our Team Has Been <br /> Focused On Building A High Quality Medical Service</small></p>
+            
+            <HashLink to="/blogs#ourblog" >
             <Button variant="outline-dark headerSideItem">See Our Blogs</Button>
+                </HashLink>
         </div>
         </section>
         </div>      
