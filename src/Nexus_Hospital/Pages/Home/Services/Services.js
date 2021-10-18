@@ -1,6 +1,7 @@
 import Aos from 'aos';
 import React, { useEffect, useState } from 'react';
 import { Button, Card, Col, Row } from 'react-bootstrap';
+import { useHistory } from 'react-router';
 import "./Services.css";
 
 // Aos Initialize
@@ -9,6 +10,7 @@ Aos.init();
 const Services = () => {
 
 const [services, setServices] = useState([]);
+const history = useHistory();
 
 useEffect(() => {
     fetch('servicesData.json')
@@ -36,7 +38,7 @@ console.log();
                             <p className="text-secondary"> Specialist: <br /> <span className="text-dark"> {service.specialist}</span> </p>
                             <p className=""><small className="text-secondary"> {service.degree} </small></p>
 
-                            <Button className="detailsButton">See Details</Button>
+                            <Button onClick={()=> history.push(`service/${service.id}`)} className="detailsButton">See Details</Button>
 
                         </Card.Body>
                         </Card>

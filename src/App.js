@@ -9,6 +9,7 @@ import Footer from './Nexus_Hospital/Pages/Shared/Footer/Footer';
 import Blogs from './Nexus_Hospital/Pages/Blogs/Blogs';
 import About from './Nexus_Hospital/Pages/About/About';
 import Contract from './Nexus_Hospital/Pages/Contract/Contract';
+import ServiceDetails from './Nexus_Hospital/Pages/Home/ServiceDetails/ServiceDetails';
 
 function App() {
   return (
@@ -27,6 +28,10 @@ function App() {
 
        <Route path="/services">
           <Services/>
+       </Route>
+
+       <Route path="/service/:serviceId">
+          <ServiceDetails/>
        </Route>
 
        <Route path="/blogs">

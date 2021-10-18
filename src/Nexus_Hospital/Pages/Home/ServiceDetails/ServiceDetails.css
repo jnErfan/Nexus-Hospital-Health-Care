@@ -1,0 +1,25 @@
+.detailsContainer {
+  margin-top: 150px;
+}
+.discription {
+  font-size: 12px;
+}
+.serviceName {
+  font-family: "Bebas Neue", cursive;
+  color: #4ea9ff;
+}
+.specialistContainer {
+  border: 1px solid #4ea9ff;
+}
+.specialistContainer:hover {
+  background-color: #83c3ff;
+  color: #fff;
+}
+.doctor {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.specialist {
+  color: orangered;
+  font-weight: 700;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
