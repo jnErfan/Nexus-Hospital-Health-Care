@@ -16,7 +16,7 @@ const About = () => {
              <div className="row row-cols-3 mt-5">
                  <div className="col col-12 col-md-6 col-lg-4">
 
-                 <div class="d-flex pt-5 text-end">
+                 <div className="d-flex pt-5 text-end">
                                
                                 <div>
                                     <h1>Testing Labs</h1>
@@ -29,7 +29,7 @@ const About = () => {
                                 </div>
                      </div>
 
-                    <div class="d-flex pt-5 text-end">
+                    <div className="d-flex pt-5 text-end">
                                
                                 <div>
                                     <h1>Work By Heart</h1>
@@ -51,7 +51,7 @@ const About = () => {
 
                  <div className="col col-12 col-md-6 col-lg-4">
                 
-                 <div class="d-flex pt-5 text-start">
+                 <div className="d-flex pt-5 text-start">
                                 <div>
                                     <img className="pe-3 pt-2" src="https://macy.7uptheme.net/wp-content/uploads/2019/09/ab3.png" alt="" />
                                 </div>
@@ -62,7 +62,7 @@ const About = () => {
                                     </p>
                                 </div>
                      </div>
-                    <div class="d-flex pt-5 text-start">
+                    <div className="d-flex pt-5 text-start">
                                 <div>
                                     <img className="pe-3 pt-2" src="https://macy.7uptheme.net/wp-content/uploads/2019/09/ab6.png" alt="" />
                                 </div>

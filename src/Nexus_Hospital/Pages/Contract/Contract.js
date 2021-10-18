@@ -30,7 +30,7 @@ const Contract = () => {
                </div>
                <div className="col col-12 col-md-6 col-lg-7">
 
-                    <h1 className="mb-4">
+                    <h1 className="mb-4 mt-4">
                        Send  Message
                    </h1>
                    <div className="text-start">

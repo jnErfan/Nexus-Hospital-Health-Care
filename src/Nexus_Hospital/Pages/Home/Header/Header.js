@@ -21,8 +21,8 @@ const Header = () => {
                </span>
               </h1>
                 
-            <p className="text-dark fw-bold"><small>Since The First Days Of Operation Nexus, Our Team Has Been <br /> Focused On Building A High Quality Medical Service</small></p>
-            <Button variant="outline-dark">See Our Blogs</Button>
+            <p className="text-dark fw-bold headerSideItem"><small>Since The First Days Of Operation Nexus, Our Team Has Been <br /> Focused On Building A High Quality Medical Service</small></p>
+            <Button variant="outline-dark headerSideItem">See Our Blogs</Button>
         </div>
         </section>
         </div>      

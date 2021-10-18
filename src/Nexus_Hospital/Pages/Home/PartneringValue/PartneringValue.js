@@ -6,7 +6,7 @@ const PartneringValue = () => {
        <div className="container pb-5">
             <div className="row row-cols-2">
             <div className="col col-12 col-md-6 col-lg-6 mt-5 mb-5">
-            <iframe width="90%" height="100%" src="https://www.youtube.com/embed/gOWX1xxnTWg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            <iframe width="90%" height="100%" src="https://www.youtube.com/embed/gOWX1xxnTWg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" >
             </iframe>
             </div>
             <div className="col col-12 col-md-6 col-lg-6 text-start mb-5">

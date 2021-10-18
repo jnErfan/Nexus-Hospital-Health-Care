@@ -17,7 +17,7 @@ console.log();
             <div className="">
                 <h1 className="ourServices mb-5">Our Services</h1>
             </div>
-            <Row xs={1} md={2} lg={3} className="g-5">
+            <Row xs={1} md={2} lg={3} className="g-4">
 
                 {
                     services.map(service => 

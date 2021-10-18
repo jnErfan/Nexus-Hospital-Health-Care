@@ -20,3 +20,13 @@
   font-size: 60px;
   font-family: "Bebas Neue", cursive;
 }
+@media only screen and (max-width: 688px) {
+  .headerTitle {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+  }
+  .headerSideItem {
+    display: none;
+  }
+}
