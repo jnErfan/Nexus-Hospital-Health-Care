@@ -10,6 +10,7 @@
 
 .navItem:hover {
   background-color: #000;
+  text-shadow: 0px 0px rgba(255, 255, 255, 0);
   color: #fff;
   transform: rotate(5deg);
   transition: transform 1s;
@@ -22,7 +23,19 @@
   width: 0%;
   transition: 1s;
 }
-
+.logOut {
+  outline: 2px solid #000;
+}
+.logOut:hover {
+  background-color: #c3dcfc;
+}
+.about {
+  text-shadow: 2px 2px 5px #fff;
+}
+.UserImage {
+  border: 2px solid #000;
+  border-radius: 50%;
+}
 .navItem:hover::after {
   width: 100%;
 }

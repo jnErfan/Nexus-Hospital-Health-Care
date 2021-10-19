@@ -31,13 +31,13 @@ const NavBar = () => {
     <div>
     <Navbar.Toggle aria-controls="basic-navbar-nav" className="mb-3"  />
     <Navbar.Collapse className="" id="basic-navbar-nav">
-      <NavLink activeStyle={activeStyle} as={HashLink} className="navItem" to="/home">
+      <NavLink activeStyle={activeStyle}className="navItem" to="/home">
       <i className="fas fa-home me-2"></i>  Home</NavLink>
-      <NavLink activeStyle={activeStyle} as={HashLink} className="navItem" to="/services#servicesid">
+      <NavLink activeStyle={activeStyle} className="navItem" to="/services">
       <i className="fas fa-notes-medical me-2"></i> Services</NavLink>
       <NavLink activeStyle={activeStyle}  className="navItem" to="/blogs">
       <i className="fab fa-blogger-b me-2"></i> Blogs</NavLink>
-      <NavLink activeStyle={activeStyle} className="navItem" to="/about">
+      <NavLink activeStyle={activeStyle} className="navItem about" to="/about">
        <i className="far fa-address-card me-2"></i> About Us</NavLink>
       <NavLink activeStyle={activeStyle}  className="navItem" to="/contract">
       <i className="far fa-envelope me-2"></i> Contract Us</NavLink>
@@ -48,18 +48,18 @@ const NavBar = () => {
    
    {
      user && <span>
-     <img className="rounded-circle me-2" width="50px" src={user?.photoURL || defaultUserImage} alt="" />
+     <img className="me-2 UserImage" width="50px" src={user?.photoURL || defaultUserImage} alt="" />
    </span>
    }
    {
-     user && <span className="fw-bold pe-2 text-secondary">
+     user && <span className="fw-bold pe-2">
      {user?.displayName || user?.email}
      </span>
    }
    
     {
-      user ? <Button onClick={logOutUser} variant=" py-0 mb-2">
-        <img width="20px" src="https://cdn-icons-png.flaticon.com/512/158/158730.png" alt="" />
+      user ? <Button onClick={logOutUser} variant="py-0 ms-2 mb-2 logOut btn">
+        <img className="" src="https://img.icons8.com/metro/26/000000/export.png" alt="" />
       </Button> :
       <><HashLink to="/login" ><Button variant="outline-dark px-3 py-0 mb-2 rounded-pill fw-bold">LOGIN</Button></HashLink>
       <HashLink to="/signin" ><Button variant="dark px-3 py-0 mb-2 rounded-pill ms-3 fw-bold">SIGN UP</Button></HashLink></>
