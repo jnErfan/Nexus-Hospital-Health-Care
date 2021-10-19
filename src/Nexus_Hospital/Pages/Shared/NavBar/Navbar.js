@@ -4,11 +4,13 @@ import { Button, Container, Navbar } from 'react-bootstrap';
 import { HashLink } from 'react-router-hash-link';
 import "./NavBar.css";
 import { NavLink } from 'react-router-dom';
+import useAuth from '../../../Hooks/useAuth';
 
 const NavBar = () => {
-   
-    const [scrollChainge, setSrollChainge] = useState(false)
-  
+   const {user, logOutUser} = useAuth();
+   const [scrollChainge, setSrollChainge] = useState(false)
+  const defaultUserImage = "https://i.ibb.co/hM9DLXG/avt2.png";
+
     const onScrollHeader = () => {
       window.scrollY >= 50 ? setSrollChainge(true) : setSrollChainge(false)
     }
@@ -29,9 +31,9 @@ const NavBar = () => {
     <div>
     <Navbar.Toggle aria-controls="basic-navbar-nav" className="mb-3"  />
     <Navbar.Collapse className="" id="basic-navbar-nav">
-      <NavLink activeStyle={activeStyle}  className="navItem" to="/home">
+      <NavLink activeStyle={activeStyle} as={HashLink} className="navItem" to="/home">
       <i className="fas fa-home me-2"></i>  Home</NavLink>
-      <NavLink activeStyle={activeStyle}  className="navItem" to="/services">
+      <NavLink activeStyle={activeStyle} as={HashLink} className="navItem" to="/services#servicesid">
       <i className="fas fa-notes-medical me-2"></i> Services</NavLink>
       <NavLink activeStyle={activeStyle}  className="navItem" to="/blogs">
       <i className="fab fa-blogger-b me-2"></i> Blogs</NavLink>
@@ -44,20 +46,25 @@ const NavBar = () => {
 
     <div>
    
-   {/* <span>
-     <img className="rounded-circle me-2" width="8%" src='User Img' alt="" />
-   </span> */}
-  {/*  <span className="fw-bold pe-2 text-secondary">
-     User Name
-   </span> */}
-   {/*  {
-      user ? <Button onClick={logOut} variant=" py-0 mb-2">
+   {
+     user && <span>
+     <img className="rounded-circle me-2" width="50px" src={user?.photoURL || defaultUserImage} alt="" />
+   </span>
+   }
+   {
+     user && <span className="fw-bold pe-2 text-secondary">
+     {user?.displayName || user?.email}
+     </span>
+   }
+   
+    {
+      user ? <Button onClick={logOutUser} variant=" py-0 mb-2">
         <img width="20px" src="https://cdn-icons-png.flaticon.com/512/158/158730.png" alt="" />
-      </Button> : */}
-      <HashLink to="/login" ><Button variant="outline-dark px-3 py-0 mb-2 rounded-pill fw-bold">LOGIN</Button></HashLink>
-      <HashLink to="/signin" ><Button variant="dark px-3 py-0 mb-2 rounded-pill ms-3 fw-bold">SIGN IN</Button></HashLink>
+      </Button> :
+      <><HashLink to="/login" ><Button variant="outline-dark px-3 py-0 mb-2 rounded-pill fw-bold">LOGIN</Button></HashLink>
+      <HashLink to="/signin" ><Button variant="dark px-3 py-0 mb-2 rounded-pill ms-3 fw-bold">SIGN UP</Button></HashLink></>
       
-    {/* } */}
+    }
     </div>
   </Container>
 

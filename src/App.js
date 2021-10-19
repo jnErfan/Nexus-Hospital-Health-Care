@@ -12,10 +12,14 @@ import Contract from './Nexus_Hospital/Pages/Contract/Contract';
 import ServiceDetails from './Nexus_Hospital/Pages/Home/ServiceDetails/ServiceDetails';
 import SignIn from './Nexus_Hospital/SignIn/SignIn';
 import Login from './Nexus_Hospital/Login/Login';
+import AuthContext from './Nexus_Hospital/Context/AuthContext';
+import PrivateRoute from './Nexus_Hospital/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
     <div className="App">
+         <AuthContext>
+            
    <Router>
      <NavBar/>
      <Switch>
@@ -32,9 +36,9 @@ function App() {
           <Services/>
        </Route>
 
-       <Route path="/service/:serviceId">
+       <PrivateRoute path="/service/:serviceId">
           <ServiceDetails/>
-       </Route>
+       </PrivateRoute>
 
        <Route path="/blogs">
           <Blogs/>
@@ -44,9 +48,9 @@ function App() {
           <About/>
        </Route>
 
-       <Route path="/contract">
+       <PrivateRoute path="/contract">
           <Contract/>
-       </Route>
+       </PrivateRoute>
 
        <Route path="/signin">
           <SignIn/>
@@ -63,6 +67,8 @@ function App() {
      </Switch>
      <Footer/>
    </Router>
+   
+         </AuthContext>
     </div>
   );
 }

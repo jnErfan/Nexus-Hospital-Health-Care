@@ -1,7 +1,11 @@
 import React from 'react';
+import { useHistory } from 'react-router';
 import "./Contract.css";
 
 const Contract = () => {
+
+    const history = useHistory();
+
     return (
         <div className="container contractConatiner" id="contractus">
             <div data-aos="flip-right" data-aos-duration="1000" className="">
@@ -47,7 +51,7 @@ const Contract = () => {
                    </div>
                    <textarea className="mt-3 w-100" placeholder="Message" id="w3review" name="w3review" rows="4" cols="50" />
                    </div>
-                    <button className="btn btn-secondary px-4 container-fluid">Send</button>
+                    <button onClick={()=> history.push("/")} className="btn btn-secondary px-4 container-fluid">Send</button>
                     
                     </div>      
                </div>
