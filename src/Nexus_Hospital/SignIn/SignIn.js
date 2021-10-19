@@ -13,6 +13,7 @@ const SignIn = () => {
 
     const redirect = location.state?.from || "/home";
 
+    // Sending to where you were before Email And Password Sign In
   const signInEmailPassword = (e) => {
         e.preventDefault();
         emailPasswordSignIn()
@@ -24,7 +25,7 @@ const SignIn = () => {
         })
     }
 
-    
+    // Sending to where you were before Google Login
     const loginWithGoogle = () => {
         googleSignIn()
         .then(result => {
@@ -33,6 +34,7 @@ const SignIn = () => {
         })
     }
 
+    // Sending to where you were before Github Login
     const loginWithGithub = () => {
         githubSignIn()
         .then(result => {
@@ -40,6 +42,8 @@ const SignIn = () => {
             setUser(result?.user);
         })
     }
+
+    // Sending to where you were before Facebook Login
     const loginWithFacebook = () => {
         facebookSignIn()
         .then(result => {

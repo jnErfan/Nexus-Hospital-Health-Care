@@ -11,7 +11,7 @@ const Login = () => {
     const redirect = location.state?.from || "/home";
 
 
-
+   // Sending to where you were before Email Password Login
     const loginEmailPassword = (e) => {
         e.preventDefault();
         loginUser()
@@ -22,7 +22,7 @@ const Login = () => {
     }
 
 
-    
+    // Sending to where you were before Google Login
     const loginWithGoogle = () => {
         googleSignIn()
         .then(result => {
@@ -30,7 +30,7 @@ const Login = () => {
             setUser(result?.user);
         })
     }
-
+// Sending to where you were before Github Login
     const loginWithGithub = () => {
         githubSignIn()
         .then(result => {
@@ -38,6 +38,8 @@ const Login = () => {
             setUser(result?.user);
         })
     }
+
+    // Sending to where you were before facebook Login
     const loginWithFacebook = () => {
         facebookSignIn()
         .then(result => {
@@ -46,8 +48,6 @@ const Login = () => {
         })
     }
     
-
-
 
     return (
         <div id="login" className="my-5">

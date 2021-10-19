@@ -9,7 +9,10 @@ import "./HomeContainer.css";
 const HomeContainer = () => {
     return (
         <div>
+          {/* Header Banner And Names Part  */}
           <Header/> 
+
+          {/* Content Area For Header Banner Fixed  */}
           <div className="content-area pt-4">
             <Services/>
           <CabinCategories/>   

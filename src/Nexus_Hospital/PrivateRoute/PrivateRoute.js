@@ -5,11 +5,14 @@ import useAuth from '../Hooks/useAuth';
 
 const PrivateRoute = ({children, ...rest}) => {
     const {user,isLoading} = useAuth();
+
+    // Data Load Late Then Showing Spinner 
     if (isLoading) {
       return <div className="mt-5"> 
       <Spinner animation="border" variant="info p-5 mt-5" />
       </div>
   }
+  // Private Route 
     return (
         <Route
         {...rest}

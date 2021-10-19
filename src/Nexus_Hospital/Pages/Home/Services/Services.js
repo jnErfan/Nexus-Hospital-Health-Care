@@ -4,19 +4,20 @@ import { Button, Card, Col, Row } from 'react-bootstrap';
 import { HashLink } from 'react-router-hash-link';
 import "./Services.css";
 
-// Aos Initialize
+// Aos On Scroll Animation Initialize
 Aos.init();
 
 const Services = () => {
 
-const [services, setServices] = useState([]);
+                const [services, setServices] = useState([]);
+                // Fatching Data From My Github 
+                useEffect(() => {
+                    fetch('https://raw.githubusercontent.com/jnErfan/Fake-Data/main/servicesData.json')
+                    .then(res => res.json())
+                    .then(data => setServices(data))
+                },[])
 
-useEffect(() => {
-    fetch('https://raw.githubusercontent.com/jnErfan/Fake-Data/main/servicesData.json')
-    .then(res => res.json())
-    .then(data => setServices(data))
-},[])
-console.log();
+
     return (
         <div className="container serviceContainer" id="servicesid">
             <div  data-aos="flip-right" className="">

@@ -19,47 +19,56 @@ function App() {
   return (
     <div className="App">
          <AuthContext>
-            
+            {/* Context Api All Children  */}
    <Router>
      <NavBar/>
      <Switch>
-
+      {/* Default Showing Page (Home Page) */}
        <Route exact path="/">
           <HomeContainer/>
        </Route>
 
+         {/* Home Page  */}
        <Route path="/home">
           <HomeContainer/>
        </Route>
 
+      {/* Services Page  */}
        <Route path="/services">
           <Services/>
        </Route>
 
+      {/* Dynamic Routing Service Details Page And This Is Private Route  */}
        <PrivateRoute path="/service/:serviceId">
           <ServiceDetails/>
        </PrivateRoute>
 
+         {/* Our Blog Page  */}
        <Route path="/blogs">
           <Blogs/>
        </Route>
 
+      {/* About Us Page  */}
        <Route path="/about">
           <About/>
        </Route>
 
+      {/* Contract Us Page */}
        <PrivateRoute path="/contract">
           <Contract/>
        </PrivateRoute>
 
+      {/* Sign In  */}
        <Route path="/signin">
           <SignIn/>
        </Route>
 
+      {/* Log In  */}
        <Route path="/login">
           <Login/>
        </Route>
 
+         {/* Error Page 404 Page Not Found  */}
        <Route exact path="*">
           <NotFound/>
        </Route>

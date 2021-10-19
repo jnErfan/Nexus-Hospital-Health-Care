@@ -2,7 +2,10 @@ import { getAuth, createUserWithEmailAndPassword, updateProfile, signOut, signIn
 import { useEffect, useState } from "react";
 import firebaseInitialize from "../Firebase/firebaseInitialize";
 
+// Firebase Config Initialized 
 firebaseInitialize();
+
+// All Auth Providers 
 const googleProvider = new GoogleAuthProvider();
 const facebookProvider = new FacebookAuthProvider();
 const githubProvider = new GithubAuthProvider();
@@ -17,21 +20,26 @@ const useFirebase = () => {
     const [userImage, setUserImage] = useState('');
     const [isLoading , setIsLoading] = useState(true);
 
-
+    // Email Field
     const emailField = (event) => {
         setEmail(event.target.value);
     }
-
+    // Password Field
     const passwordField = (event) => {
         setPassword(event.target.value);
     }
+
+    // User Name Field
     const userNameField = (event) => {
         setUserName(event.target.value);
     }
+
+    // User Image Url Field
     const userImageUrlField = (event) => {
         setUserImage(event.target.value);
     }
 
+    // Sign In Email And Password Provider 
     const emailPasswordSignIn = () => {
         setIsLoading(true)
         setError("");
@@ -41,6 +49,7 @@ const useFirebase = () => {
         }).finally(() => setIsLoading(false));
     }
 
+    // Varify Email Send Message In Email
     const varifyEmailAdress = () => {
         sendEmailVerification(auth.currentUser)
         .then(() => {
@@ -50,7 +59,7 @@ const useFirebase = () => {
         })
     }
 
-    
+    // Reset Password 
     const resetPassword = () => {
         sendPasswordResetEmail(auth, email)
         .then(() => {
@@ -60,13 +69,14 @@ const useFirebase = () => {
         })
     }
 
+    // Update Profile Name And Profile Image
    const updateUserProfile = () => {
         updateProfile(auth.currentUser, {
             displayName: userName, photoURL: userImage
         })
    }
 
-
+// Log In Email And Password Provider 
    const loginUser = (e) => {
     setIsLoading(true)
     setError("");
@@ -76,6 +86,7 @@ const useFirebase = () => {
         }).finally(() => setIsLoading(false));
    }
 
+   // Log Out All Provider
    const logOutUser = () => {
     setError("");
     signOut(auth)
@@ -87,6 +98,7 @@ const useFirebase = () => {
     })
    }
 
+   // GitHub Sign In
    const githubSignIn = () => {
     setError("");
     setIsLoading(true)
@@ -96,6 +108,7 @@ const useFirebase = () => {
     }).finally(() => setIsLoading(false));
 }
 
+    // Google Sign In
     const googleSignIn = () => {
     setError("")
     setIsLoading(true)
@@ -105,6 +118,7 @@ const useFirebase = () => {
       }).finally(() => setIsLoading(false));
     }
 
+    // Facebook Sign In
     const facebookSignIn = () => {
     setError("")
     setIsLoading(true)
@@ -114,7 +128,7 @@ const useFirebase = () => {
       }).finally(() => setIsLoading(false));
     }
 
-
+    // On Auth State Chainge Realoading Stored User Data
    useEffect(() => {
     const unsubscribed =   onAuthStateChanged(auth, user => {
            if (user) {
@@ -127,7 +141,7 @@ const useFirebase = () => {
        return () => unsubscribed;
    }, [auth] )
 
-console.log(email, password);
+   // Return All 
 return {
     user,
     error,

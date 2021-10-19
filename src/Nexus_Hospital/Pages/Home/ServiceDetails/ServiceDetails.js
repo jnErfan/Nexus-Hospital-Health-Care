@@ -6,14 +6,19 @@ import "./ServiceDetails.css";
 const ServiceDetails = () => {
     const {serviceId} = useParams();
     const [serviceDetails , setServiceDetails] = useState([]);
+
+    // Fatching Data From Github 
     useEffect(() => {
         fetch("https://raw.githubusercontent.com/jnErfan/Fake-Data/main/servicesData.json")
         .then(res => res.json())
         .then(data => setServiceDetails(data))
     },[])
 
+    // Filtering Service Id  From All Services
     const serviceDetail = serviceDetails.filter(service => service.id === serviceId);
     const service = serviceDetail?.[0];
+
+
     return (
 <div className="container detailsContainer" id="serviceDetails">
             <div  data-aos="flip-right" data-aos-duration="1000" className="">
