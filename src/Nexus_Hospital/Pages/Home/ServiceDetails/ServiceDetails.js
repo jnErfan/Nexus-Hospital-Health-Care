@@ -21,12 +21,12 @@ const ServiceDetails = () => {
 
     return (
 <div className="container detailsContainer" id="serviceDetails">
-            <div  data-aos="flip-right" data-aos-duration="1000" className="">
+            <div  data-aos="fade-down" data-aos-duration="1000" className="">
                 <h1 className="ourService mb-5">Nexus Service</h1>
             </div>
  <div className="row row-cols-2">
           
-      <div data-aos="flip-up" data-aos-duration="2000" className="col col-12 col-md-6 col-lg-6">
+      <div  data-aos="fade-up" data-aos-duration="2000" className="col col-12 col-md-6 col-lg-6">
                 <div>
                     <h1 className="text-start serviceName">
                     {service?.serviceName}

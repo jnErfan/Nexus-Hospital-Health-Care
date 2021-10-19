@@ -25,7 +25,7 @@ const NavBar = () => {
         <Navbar className={scrollChainge ? "bg-white scrollBg" : "bg-transparent scrollOutBg"} fixed="top" bg="light" variant="light" expand="md">
   <Container>
    <div>
-   <Navbar.Brand href="#home"> <img width="50px" src="https://i.ibb.co/G5SHpzG/logo.png" alt="" /> </Navbar.Brand>
+   <Navbar.Brand href="#home"> <img className="responsive" width="50px" src="https://i.ibb.co/G5SHpzG/logo.png" alt="" /> </Navbar.Brand>
    </div>
    
     <div>
@@ -48,11 +48,11 @@ const NavBar = () => {
    
    {
      user && <span>
-     <img className="me-2 UserImage" width="50px" src={user?.photoURL || defaultUserImage} alt="" />
+     <img className="me-2 UserImage responsive" width="50px" src={user?.photoURL || defaultUserImage} alt="" />
    </span>
    }
    {
-     user && <span className="fw-bold pe-2">
+     user && <span className="fw-bold pe-2 responsive">
      {user?.displayName || user?.email}
      </span>
    }

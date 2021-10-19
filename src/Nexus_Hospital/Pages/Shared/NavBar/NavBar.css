@@ -61,4 +61,7 @@
   .navItem:hover::after {
     width: 0%;
   }
+  .responsive {
+    display: none;
+  }
 }
