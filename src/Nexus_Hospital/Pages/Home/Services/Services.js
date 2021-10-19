@@ -12,7 +12,7 @@ const Services = () => {
 const [services, setServices] = useState([]);
 
 useEffect(() => {
-    fetch('servicesData.json')
+    fetch('https://raw.githubusercontent.com/jnErfan/Fake-Data/main/servicesData.json')
     .then(res => res.json())
     .then(data => setServices(data))
 },[])

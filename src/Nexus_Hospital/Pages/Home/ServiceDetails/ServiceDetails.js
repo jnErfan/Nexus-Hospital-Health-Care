@@ -7,7 +7,7 @@ const ServiceDetails = () => {
     const {serviceId} = useParams();
     const [serviceDetails , setServiceDetails] = useState([]);
     useEffect(() => {
-        fetch("https://raw.githubusercontent.com/jnErfan/Restaurant-Foods-Data/main/servicesData.json")
+        fetch("https://raw.githubusercontent.com/jnErfan/Fake-Data/main/servicesData.json")
         .then(res => res.json())
         .then(data => setServiceDetails(data))
     },[])
